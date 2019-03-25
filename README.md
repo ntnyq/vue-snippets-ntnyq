@@ -1,3 +1,3 @@
-# Vscode Snippets Ntnyq
+# Vue Snippets Ntnyq
 
 __WIP__

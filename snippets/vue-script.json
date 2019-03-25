@@ -1,1 +1,24 @@
-{}
+{
+  "Vue Data": {
+    "prefix": "vdata",
+    "body": [
+      "data () {",
+      "  return {",
+      "    ${1:isLoading}: ${2:false}",
+      "  }",
+      "},"
+    ],
+    "description": "Vue Data"
+  },
+  "Vue Method": {
+    "prefix": "vmethod",
+    "body": [
+      "methods: {",
+      "  ${1:fetchData} () {",
+      "",
+      "  }",
+      "},"
+    ],
+    "description": "Vue Method"
+  }
+}

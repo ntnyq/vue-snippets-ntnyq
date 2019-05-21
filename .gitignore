@@ -1,4 +1,4 @@
 .DS_Store
 vsc-extension-quickstart.md
 node_modules
-vue-vscode-snippets-*.vsix
+vue-snippets-*.vsix

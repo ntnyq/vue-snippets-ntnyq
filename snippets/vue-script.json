@@ -10,6 +10,27 @@
     ],
     "description": "Vue Data"
   },
+  "Vue Props": {
+    "prefix": "vprops",
+    "body": [
+      "props: {",
+      "  value: {",
+      "    type: String,",
+      "    default: ''",
+      "  }",
+      "}"
+    ],
+    "description": "Vue Props"
+  },
+  "Vue Components": {
+    "prefix": "vcomp",
+    "body": [
+      "components: {",
+      "",
+      "}"
+    ],
+    "description": "Vue Components"
+  },
   "Vue Method": {
     "prefix": "vmethod",
     "body": [
@@ -20,5 +41,26 @@
       "},"
     ],
     "description": "Vue Method"
+  },
+  "Vue Watch": {
+    "prefix": "vwatch",
+    "body": [
+      "watch: {",
+      "  value: {",
+      "    handler: 'fetchData',",
+      "    immediate: true",
+      "  }",
+      "}"
+    ],
+    "description": "Vue Watch"
+  },
+  "Vue Created": {
+    "prefix": "vcreated",
+    "body": [
+      "created () {",
+      "",
+      "}"
+    ],
+    "description": "Vue Created"
   }
 }

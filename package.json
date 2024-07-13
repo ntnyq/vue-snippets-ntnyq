@@ -2,7 +2,7 @@
   "publisher": "ntnyq",
   "name": "vue-snippets-ntnyq",
   "displayName": "Vue Snippets Ntnyq",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "packageManager": "pnpm@9.5.0",
   "preview": true,

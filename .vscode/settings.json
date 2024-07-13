@@ -1,0 +1,25 @@
+{
+  "eslint.enable": true,
+  "prettier.enable": true,
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    "vue",
+    "yaml",
+    "html",
+    "json",
+    "jsonc",
+    "json5",
+    "markdown",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "json.schemas": [
+    {
+      "fileMatch": ["/snippets/*.json"],
+      "url": "/.vscode/schemas/snippets.schema.json"
+    }
+  ],
+  "cSpell.words": ["bumpp", "changelogithub", "Cves", "NPMRC", "ofetch", "pinia", "tsup"]
+}

@@ -1,4 +1,17 @@
 .DS_Store
-vsc-extension-quickstart.md
 node_modules
-/*.vsix
+*.log*
+*.local
+dist
+coverage
+.eslintcache
+*.tsbuildinfo
+*.vsix
+
+# Editor
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,37 @@
+{
+  "id": "vscode://schemas/snippets",
+  "allowComments": true,
+  "allowTrailingCommas": true,
+  "type": "object",
+  "description": "User snippet configuration",
+  "additionalProperties": {
+    "type": "object",
+    "required": ["body"],
+    "properties": {
+      "prefix": {
+        "description": "The prefix to use when selecting the snippet in intellisense",
+        "type": ["string", "array"]
+      },
+      "isFileTemplate": {
+        "description": "The snippet is meant to populate or replace a whole file",
+        "type": "boolean"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope to apply the snippet to. Use '*' for global scope. Use ',' to separate multiple scopes. For example: 'javascript,typescript'."
+      },
+      "body": {
+        "markdownDescription": "The snippet content. Use `$1`, `${1:defaultText}` to define cursor positions, use `$0` for the final cursor position. Insert variable values with `${varName}` and `${varName:defaultText}`, e.g. `This is file: $TM_FILENAME`.",
+        "type": ["string", "array"],
+        "items": {
+          "type": "string"
+        }
+      },
+      "description": {
+        "description": "The snippet description.",
+        "type": ["string", "array"]
+      }
+    },
+    "additionalProperties": false
+  }
+}

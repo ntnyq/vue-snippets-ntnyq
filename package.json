@@ -1,58 +1,82 @@
 {
+  "publisher": "ntnyq",
   "name": "vue-snippets-ntnyq",
   "displayName": "Vue Snippets Ntnyq",
-  "description": "Vue snippets speed up your development",
   "version": "0.0.3",
-  "publisher": "ntnyq",
-  "scripts": {
-    "build": "vsce package -o vue-vscode-snippets-$npm_package_version.vsix",
-    "install": "yarn build && code --install-extension vue-vscode-snippets-$npm_package_version.vsix"
+  "private": true,
+  "packageManager": "pnpm@9.5.0",
+  "preview": true,
+  "description": "Opinionable VSCode extension for VueJS snippets.",
+  "keywords": [
+    "vue",
+    "snippets",
+    "vue-snippets"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com"
   },
-  "icon": "images/vue-logo.png",
-  "engines": {
-    "vscode": "^1.37.0"
-  },
+  "homepage": "https://github.com/ntnyq/vue-snippets-ntnyq",
   "repository": {
-    "type": "git",
+    "type": "github",
     "url": "https://github.com/ntnyq/vue-snippets-ntnyq.git"
   },
-  "keywords": [
-    "Vue",
-    "Vue 2",
-    "Vue snippets"
+  "icon": "./res/icon.png",
+  "files": [
+    "dist"
   ],
-  "categories": [
-    "Snippets"
-  ],
+  "scripts": {
+    "lint": "eslint .",
+    "pack": "vsce package --no-dependencies",
+    "prepare": "husky",
+    "publish": "vsce publish --no-dependencies",
+    "release": "bumpp && pnpm run publish"
+  },
+  "devDependencies": {
+    "@ntnyq/eslint-config": "^2.6.0",
+    "@ntnyq/prettier-config": "^1.21.2",
+    "@types/node": "^20.14.10",
+    "@types/vscode": "^1.91.0",
+    "@vscode/vsce": "^2.30.0",
+    "bumpp": "^9.4.1",
+    "eslint": "^9.7.0",
+    "husky": "^9.0.11",
+    "nano-staged": "^0.8.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  },
   "extensionDependencies": [
-    "octref.vetur"
+    "Vue.volar"
   ],
   "contributes": {
     "snippets": [
       {
         "language": "vue",
-        "path": "./snippets/vue.json"
+        "path": "./snippets/sfc.json"
       },
       {
-        "language": "vue-html",
-        "path": "./snippets/vue-template.json"
+        "language": "typescript",
+        "path": "./snippets/router.json"
       },
       {
-        "language": "vue",
-        "path": "./snippets/vue-script.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/vue-script.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/vue-script-vuex.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/vue-script-router.json"
+        "language": "typescript",
+        "path": "./snippets/pinia.json"
       }
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/ntnyq/vue-snippets-ntnyq/issues/new"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "prettier": "@ntnyq/prettier-config",
+  "nano-staged": {
+    "*.{js,ts,mjs,cjs,md,json,yml,yaml}": "eslint --fix"
   }
 }

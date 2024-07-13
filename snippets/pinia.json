@@ -1,0 +1,16 @@
+{
+  "Define a pinia store": {
+    "prefix": "defineStore",
+    "body": [
+      "import pinia from '@/stores'",
+      "import { defineStore } from 'pinia'",
+      "",
+      "const use${1:App}Store = defineStore('${1:App}', () => {",
+      "",
+      "})",
+      "",
+      "const use${1:App}StoreWithOut = () => use${1:App}Store(pinia)"
+    ],
+    "description": "Define a pinia store"
+  }
+}

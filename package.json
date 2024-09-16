@@ -4,7 +4,7 @@
   "displayName": "Vue Snippets Ntnyq",
   "version": "0.0.4",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@9.10.0",
   "preview": true,
   "description": "Opinionable VSCode extension for VueJS snippets.",
   "keywords": [
@@ -41,11 +41,11 @@
     "@vscode/vsce": "^3.1.0",
     "bumpp": "^9.5.2",
     "eslint": "^9.10.0",
-    "husky": "^9.1.5",
+    "husky": "^9.1.6",
     "nano-staged": "^0.8.0",
     "prettier": "^3.3.3",
-    "tsx": "^4.19.0",
-    "typescript": "^5.5.4"
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
   },
   "extensionDependencies": [
     "Vue.volar"
@@ -73,7 +73,7 @@
     "Snippets"
   ],
   "engines": {
-    "vscode": "^1.93.0"
+    "vscode": "^1.93.1"
   },
   "prettier": "@ntnyq/prettier-config",
   "nano-staged": {

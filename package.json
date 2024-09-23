@@ -2,10 +2,10 @@
   "publisher": "ntnyq",
   "name": "vue-snippets-ntnyq",
   "displayName": "Vue Snippets Ntnyq",
+  "preview": true,
   "version": "0.0.4",
   "private": true,
-  "packageManager": "pnpm@9.10.0",
-  "preview": true,
+  "packageManager": "pnpm@9.11.0",
   "description": "Opinionable VSCode extension for VueJS snippets.",
   "keywords": [
     "vue",
@@ -23,9 +23,6 @@
     "url": "https://github.com/ntnyq/vue-snippets-ntnyq.git"
   },
   "icon": "./res/icon.png",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "lint": "eslint .",
     "pack": "vsce package --no-dependencies",
@@ -34,13 +31,13 @@
     "release": "bumpp && pnpm run publish"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^2.8.2",
-    "@ntnyq/prettier-config": "^1.21.2",
-    "@types/node": "^20.16.5",
+    "@ntnyq/eslint-config": "^3.0.0-beta.17",
+    "@ntnyq/prettier-config": "^1.21.3",
+    "@types/node": "^22.5.5",
     "@types/vscode": "^1.93.0",
     "@vscode/vsce": "^3.1.0",
     "bumpp": "^9.5.2",
-    "eslint": "^9.10.0",
+    "eslint": "^9.11.0",
     "husky": "^9.1.6",
     "nano-staged": "^0.8.0",
     "prettier": "^3.3.3",

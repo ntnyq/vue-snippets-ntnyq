@@ -5,7 +5,7 @@
   "preview": true,
   "version": "0.0.4",
   "private": true,
-  "packageManager": "pnpm@9.12.2",
+  "packageManager": "pnpm@9.12.3",
   "description": "Opinionable VSCode extension for VueJS snippets.",
   "keywords": [
     "vue",
@@ -31,17 +31,17 @@
     "release": "bumpp && pnpm run publish"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.1.0",
+    "@ntnyq/eslint-config": "^3.1.1",
     "@ntnyq/prettier-config": "^1.21.3",
-    "@types/node": "^22.7.7",
+    "@types/node": "^22.8.1",
     "@types/vscode": "^1.94.0",
-    "@vscode/vsce": "^3.2.0",
+    "@vscode/vsce": "^3.2.1",
     "bumpp": "^9.7.1",
     "eslint": "^9.13.0",
     "husky": "^9.1.6",
     "nano-staged": "^0.8.0",
     "prettier": "^3.3.3",
-    "tsx": "^4.19.1",
+    "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   },
   "extensionDependencies": [

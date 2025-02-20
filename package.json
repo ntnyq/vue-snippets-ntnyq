@@ -3,7 +3,7 @@
   "name": "vue-snippets-ntnyq",
   "displayName": "Vue Snippets Ntnyq",
   "preview": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "packageManager": "pnpm@10.4.1",
   "description": "Opinionable VSCode extension for VueJS snippets.",
@@ -28,9 +28,7 @@
   "icon": "./res/icon.png",
   "files": [
     "LICENSE",
-    "dist/*",
     "res/*",
-    "schemas/*",
     "snippets/*"
   ],
   "scripts": {

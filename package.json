@@ -5,11 +5,11 @@
   "preview": true,
   "version": "0.0.4",
   "private": true,
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@10.4.1",
   "description": "Opinionable VSCode extension for VueJS snippets.",
   "keywords": [
-    "vue",
     "snippets",
+    "vue",
     "vue-snippets"
   ],
   "license": "MIT",
@@ -22,31 +22,40 @@
     "type": "github",
     "url": "https://github.com/ntnyq/vue-snippets-ntnyq.git"
   },
+  "bugs": {
+    "url": "https://github.com/ntnyq/vue-snippets-ntnyq/issues/new"
+  },
   "icon": "./res/icon.png",
+  "files": [
+    "LICENSE",
+    "dist/*",
+    "res/*",
+    "schemas/*",
+    "snippets/*"
+  ],
   "scripts": {
     "lint": "eslint .",
     "pack": "vsce package --no-dependencies",
     "prepare": "husky",
-    "publish": "vsce publish --no-dependencies",
-    "release": "bumpp && pnpm run publish"
+    "release": "run-s release:check release:version release:publish",
+    "release:check": "run-s lint",
+    "release:publish": "vsce publish --no-dependencies",
+    "release:version": "bumpp"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.1.1",
-    "@ntnyq/prettier-config": "^1.21.3",
-    "@types/node": "^22.8.1",
-    "@types/vscode": "^1.94.0",
-    "@vscode/vsce": "^3.2.1",
-    "bumpp": "^9.7.1",
-    "eslint": "^9.13.0",
-    "husky": "^9.1.6",
+    "@ntnyq/eslint-config": "^4.0.0-beta.8",
+    "@ntnyq/prettier-config": "^2.0.0",
+    "@types/node": "^22.13.4",
+    "@types/vscode": "^1.97.0",
+    "@vscode/vsce": "^3.2.2",
+    "bumpp": "^10.0.3",
+    "eslint": "^9.20.1",
+    "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
-    "prettier": "^3.3.3",
-    "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
+    "npm-run-all2": "^7.0.2",
+    "prettier": "^3.5.1",
+    "typescript": "^5.7.3"
   },
-  "extensionDependencies": [
-    "Vue.volar"
-  ],
   "contributes": {
     "snippets": [
       {
@@ -63,17 +72,21 @@
       }
     ]
   },
-  "bugs": {
-    "url": "https://github.com/ntnyq/vue-snippets-ntnyq/issues/new"
-  },
   "categories": [
     "Snippets"
   ],
+  "extensionDependencies": [
+    "Vue.volar"
+  ],
   "engines": {
-    "vscode": "^1.94.2"
+    "vscode": "^1.97.0"
   },
-  "prettier": "@ntnyq/prettier-config",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
   "nano-staged": {
-    "*.{js,ts,mjs,cjs,md,json,yml,yaml}": "eslint --fix"
+    "*.{js,ts,mjs,cjs,md,yml,yaml,json}": "eslint --fix"
   }
 }

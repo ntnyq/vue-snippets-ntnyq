@@ -4,11 +4,11 @@
     "scope": "vue",
     "body": [
       "<script lang=\"ts\" setup>",
+      "defineProps<{}>()",
       "</script>",
       "",
       "<template>",
-      "  <div>",
-      "  </div>",
+      "  <div class=\"\">${1:Hello world}</div>",
       "</template>",
       ""
     ],

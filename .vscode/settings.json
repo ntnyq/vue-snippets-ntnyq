@@ -2,10 +2,12 @@
   "eslint.enable": true,
   "prettier.enable": true,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.configPath": "./prettier.config.mjs",
   "eslint.validate": [
     "vue",
     "yaml",
-    "html",
+    "toml",
     "json",
     "jsonc",
     "json5",
@@ -21,5 +23,13 @@
       "url": "/.vscode/schemas/snippets.schema.json"
     }
   ],
-  "cSpell.words": ["bumpp", "changelogithub", "Cves", "NPMRC", "ofetch", "pinia", "tsup"]
+  "cSpell.words": [
+    "bumpp",
+    "changelogithub",
+    "Cves",
+    "NPMRC",
+    "ofetch",
+    "pinia",
+    "tsup"
+  ]
 }

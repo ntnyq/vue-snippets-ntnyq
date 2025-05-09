@@ -27,9 +27,11 @@
     "bumpp",
     "changelogithub",
     "Cves",
+    "esbuild",
     "NPMRC",
     "ofetch",
     "pinia",
-    "tsup"
+    "tsup",
+    "unrs"
   ]
 }

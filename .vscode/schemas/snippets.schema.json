@@ -1,9 +1,6 @@
 {
-  "id": "vscode://schemas/snippets",
-  "allowComments": true,
-  "allowTrailingCommas": true,
-  "type": "object",
   "description": "User snippet configuration",
+  "type": "object",
   "additionalProperties": {
     "type": "object",
     "required": ["body"],
@@ -33,5 +30,8 @@
       }
     },
     "additionalProperties": false
-  }
+  },
+  "allowComments": true,
+  "allowTrailingCommas": true,
+  "id": "vscode://schemas/snippets"
 }
